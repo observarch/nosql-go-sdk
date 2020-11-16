@@ -54,6 +54,13 @@ const (
 	// RegionMEJeddah1 represents the region for Saudi Arabia West (Jeddah).
 	RegionMEJeddah1 Region = "me-jeddah-1"
 
+	// RegionUAEDubai1 represents the region for UAE East (Dubai).
+	RegionUAEDubai1 Region = "me-dubai-1"
+	// RegionUKCardiff1 represents the region for UK West (Newport).
+	RegionUKCardiff1 Region = "uk-cardiff-1"
+	// RegionUSSanJose1 represents the region for US West (San Jose).
+	RegionUSSanJose1 Region = "us-sanjose-1"
+
 	// RegionUSLangley1 represents the region for Langley.
 	RegionUSLangley1 Region = "us-langley-1"
 	// RegionUSLuke1 represents the region for Luke.
@@ -97,6 +104,10 @@ var regionRealm = map[Region]string{
 	RegionEUAmsterdam1: "oc1",
 	RegionSASaopaulo1:  "oc1",
 
+	RegionUKCardiff1:  "oc1",
+	RegionUAEDubai1:   "oc1",
+	RegionUSSanJose1:  "oc1",
+
 	RegionUSLangley1: "oc2",
 	RegionUSLuke1:    "oc2",
 
@@ -127,6 +138,10 @@ var shortNameRegion = map[string]Region{
 	"jed": RegionMEJeddah1,
 	"syd": RegionAPSydney1,
 	"ltn": RegionUKGovLondon1,
+
+	"sjc": RegionUSSanJose1,
+	"dxb": RegionUAEDubai1,
+	"cwl": RegionUKCardiff1,
 }
 
 func (region Region) secondLevelDomain() string {

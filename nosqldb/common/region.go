@@ -75,6 +75,9 @@ const (
 
 	// RegionUKGovLondon1 represents the government region for London.
 	RegionUKGovLondon1 Region = "uk-gov-london-1"
+	
+	//RegionUKGovCardiff1 gov region Cardiff
+	RegionUKGovCardiff1 Region = "uk-gov-cardiff-1"
 )
 
 var realm = map[string]string{
@@ -116,6 +119,7 @@ var regionRealm = map[Region]string{
 	RegionUSGovPhoenix1: "oc3",
 
 	RegionUKGovLondon1: "oc4",
+	RegionUKGovCardiff1: "oc4",
 }
 
 var shortNameRegion = map[string]Region{
@@ -137,7 +141,9 @@ var shortNameRegion = map[string]Region{
 	"yyz": RegionCAToronto1,
 	"jed": RegionMEJeddah1,
 	"syd": RegionAPSydney1,
+	
 	"ltn": RegionUKGovLondon1,
+	"brs": RegionUKGovCardiff1,
 
 	"sjc": RegionUSSanJose1,
 	"dxb": RegionUAEDubai1,

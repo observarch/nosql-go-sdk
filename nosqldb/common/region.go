@@ -53,6 +53,9 @@ const (
 	RegionSASaopaulo1 Region = "sa-saopaulo-1"
 	// RegionMEJeddah1 represents the region for Saudi Arabia West (Jeddah).
 	RegionMEJeddah1 Region = "me-jeddah-1"
+	
+	// RegionSASantiago1 represents the region for Chile (Santiago).
+	RegionSASantiago1 Region = "sa-santiago-1"
 
 	// RegionUAEDubai1 represents the region for UAE East (Dubai).
 	RegionUAEDubai1 Region = "me-dubai-1"
@@ -106,6 +109,7 @@ var regionRealm = map[Region]string{
 	RegionEUZurich1:    "oc1",
 	RegionEUAmsterdam1: "oc1",
 	RegionSASaopaulo1:  "oc1",
+	RegionSASantiago1:  "oc1",
 
 	RegionUKCardiff1:  "oc1",
 	RegionUAEDubai1:   "oc1",
@@ -141,6 +145,7 @@ var shortNameRegion = map[string]Region{
 	"yyz": RegionCAToronto1,
 	"jed": RegionMEJeddah1,
 	"syd": RegionAPSydney1,
+	"scl": RegionSASantiago1,
 	
 	"ltn": RegionUKGovLondon1,
 	"brs": RegionUKGovCardiff1,
